@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beresin - Cleaning Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+   
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.hero {
+    background-color: #ffffff;
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1{
+    margin-left: -620px;
+}
+.hero-content {
+    max-width: 500px;
+}
+.hero h3 {
+    font-size: 12px;
+    margin-top: -200px;
+    padding: 22px;
+}
+.hero h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    margin-top: 2px;
+}
+
+.hero p {
+    margin-bottom: 30px;
+}
+
+
+.btn {
+    display: inline-block;
+    background-color:#ffffff;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+.btn1 {
+    display: inline-block;
+    background-color: #f17fcf;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+.btn1:hover{
+    transform: scale(1.1);
+    background-color: #fa42c3;
+}
+.btn2 {
+    display: inline-block;
+    background-color: #f17fcf;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-right: 10px;
+    text-decoration: none;
+    margin-top: -10px;
+    
+}
+.btn2:hover{
+    transform: scale(1.1);
+    background-color: #fa42c3;
+}
+
+
+.hero-image {
+    background-image: url('Hero.PNG');
+    background-size: cover;
+    background-position: center;
+    width: 80%;
+    height: 640px;
+}
+
+.features {
+    background-color:#f1f4f9;
+    padding: 50px 0;
+    display: flex;
+   
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.Bold {
+   font: bold;
+}
+
+.feature {
+    margin-left: 10%;
+    margin-right: 10%;
+    flex-basis: 50%;
+}
+
+.feature h3 {
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+.hero img{
+    border-radius: 50px;
+}
+.feature img{
+    margin-top: 20%;
+}
+.container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .section-title {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .services {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .service {
+        width: 250px;
+        margin: 20px;
+        text-align: center;
+        transition: all 0.5s ease-in-out;
+    }
+    .service-icon {
+        font-size: 50px;
+        color: #6c5ce7;
+        margin-bottom: 20px;
+    }
+    .service-title {
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: #333;
+    }
+    .service-description {
+        color: #666;
+    }
+    .center{
+        margin-left: 20px;
+    }
+    .learn-more {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #fff;
+        color: black;
+        text-decoration: none;
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+    .service:hover{
+        background-color:  #f17fcf;
+        transform: scale(1.2);
+    }
+    .container1 {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+    
+    }
+    .bg-shape {
+        background-image: url('/2.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 56%;
+    height: 508px;
+    margin-left: -300px;
+    }
+    .title {
+        font-size: 30px;
+        color: #6c5ce7;
+        margin-bottom: 30px;
+    }
+    .title p{
+        font-size: large;
+    }
+    .list {
+        text-align: left;
+        margin-top: 30px;
+    }
+    .item {
+        margin-bottom: 25px;
+    }
+    .item-title {
+        font-size: 25px;
+        color: black;
+        margin-bottom: 10px;
+    }
+    .item-description {
+        color: #666;
+    }
+    .stats {
+        font-size: 18px;
+        color: black;
+        margin-bottom: 30px;
+    }
+    .size{
+        margin-left: 42%;
+        margin-top: -482px;
+        
+    }
+    .whole{
+        background-color: #f1f4f9;
+    }
+    .W{
+        font-size: 15px;
+    }
+    .X{
+        font: bolder;
+        font-size: 40px;
+    }
+    .pricing-container {
+        text-align: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .pricing-container h6{
+        text-align: center;
+    }
+    .pricing-card {
+        width: 30%;
+        background-color: #f7bcff;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        text-align: center;
+    }
+    .pricing-card1 {
+        width: 30%;
+        background-color: #b4c2ff;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        text-align: center;
+    }
+    .pricing-title {
+        font-size: 24px;
+        color: black;
+        margin-bottom: 20px;
+    }
+    .pricing-price {
+        font-size: 36px;
+        color: black;
+        margin-bottom: 20px;
+    }
+    .pricing-features {
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .pricing-feature {
+        margin-bottom: 10px;
+    }
+    .pricing-button {
+        background-color:  #fa42c3;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    .pricing-button1 {
+        background-color: #3b24ee;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    .pricing-button:hover {
+        background-color: #db07ca;
+        transform: scale(1.1);
+    }
+    .pricing-button1:hover {
+        background-color: #3203a0;
+        transform: scale(1.1);
+    }
+    .heading{
+        text-align: center;
+    }
+    .small{
+        font-size: 20px;
+    }
+    .big{
+        font: bolder;
+        font-size: 50px;
+    }
+
+.team-section {
+    display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  background-color: #f1f4f9;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+h5 {
+  text-align: center;
+  color: #333;
+}
+
+.team-member {
+  /* display: flex; */
+  flex: 1;
+  align-items: center;
+  width: 353px;
+    margin: 21px;
+   
+    background-color: #f17fcf;
+    height: 330px;
+    margin-bottom: 30px;
+    padding: 76px;
+  border-radius: 72px; 
+  transition: background-color 0.3s, color 0.3s;
+}
+.team-member:hover{
+    background-color: #8a5d84;
+    transform: scale(1.1);
+}
+.member-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.member-info h3 {
+  margin: 0;
+  color: #fff;
+}
+
+.member-info p {
+  margin: 0;
+  color: #f0f0f0;
+}
+
+.follow-button {
+    width: max-content;
+  display: inline-block;
+  /* padding: 8px 16px; */
+  color: #000000;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.follow-button:hover {
+  background-color: #8a5d84;
+  color: #fff;
+}
+ .rating {
+    align-items: center;
+  margin-bottom: 10px;
+}
+
+.star {
+  color: #f9d71c; 
+  font-size: 17px;
+} 
+.Heads{
+background-color:#f1f4f9 ;
+}
+.testimonial {
+  background-color: #f8f8f8;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.testimonial-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.testimonial h2 {
+  color: #333;
+}
+
+.testimonial-cards {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.testimonial-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 30%;
+}
+
+.stars {
+  color: #f4d613;
+  margin-bottom: 10px;
+}
+
+.star {
+  display: inline-block;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  background-color: #bbb; 
+  border-radius: 50%;
+  margin-right: 15px;
+  margin-left: 72px;
+}
+
+.client-details p {
+  margin: 0;
+}
+
+.trust-info {
+  margin-top: 40px;
+}
+
+.rating {
+  display: inline-block;
+  position: relative;
+}
+
+.rating-value {
+  /* position: absolute; */
+  left: 0px;
+} 
+.footer {
+  background-color: #0b083f;
+  color: #fff;
+  padding: 30px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* .footer-logo img {
+  width: 150px;
+  margin-bottom: 20px;
+} */
+
+.footer-logo p {
+  font-size: 14px;
+}
+
+.footer-links {
+  display: flex;
+  margin-right: 106px;
+}
+
+.footer-links ul {
+  list-style: none;
+  margin-right: -43px;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 110px;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+}
+
+.footer-bottom .footer-links a {
+  margin-left: 10px;
+}
+
+.footer-bottom .footer-links a:first-child {
+  margin-left: 0;
+}
+.footer-logo h3{
+    font-size: 40px;
+    color: white;
+}
+.services1{
+    display: block;
+}
+.footer-links h2{
+    color: white;
+}
+.line {
+    position: absolute;
+   
+    left: 0;
+    width: 83%;
+    height: 1px;
+    background-color: white;
+    align-self: center;
+    margin-left: 84px;
+    margin-top: 353px;
+}
+.footer-bottom p{
+
+    margin-left: 80px;
+}
+.text {
+  font-size: 18px;
+  opacity: 0; 
+  animation: fadeIn 2s ease forwards; 
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; 
+  }
+  100% {
+    opacity: 1; 
+  }
+}
+.texts {
+  font-size: 18px;
+  transform: scale(0); 
+  animation: scaleIn 1s forwards; 
+}
+
+@keyframes scaleIn {
+  to {
+    transform: scale(1); 
+  }
+}
+</style>
+<body>
+    <header>
+        <img src="/3.jpg" alt="" width="70px" height="70px">
+        <h1>Beresin </h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Page</a></li>
+                <li><a href="#">Contact Us</a></li> 
+                <a href="#" class="btn2">Get Started</a>
+            </ul>
+           
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <img src="" alt=""  >
+            <h3>✨BERSEIN - CLEANING SERVICES</h3>
+            <h2 class="texts">Cleaning Services For All Your Needs</h2>
+            <p class="text">Faucibus commodo a aenean et sit quisque ipsum. Consequat eu id ut dolor felis quis. Sagittis a sapien pulvinar etiam senectus adipiscing tempor diam tellus.</p>
+            <a href="#" class="btn1">Get Started</a>
+            <a href="#" class="btn">How It Works?</a>
+        </div>
+        <div class="hero-image"></div>
+        <div class >
+
+        </div>
+    </section>
+    
+
+    <section class="features">
+        <div class="feature">
+            <img src="/Feature.jpg" alt="" width="30%" height="30%">
+            <h3>Flexible Scheduling</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut sodales libero.</p>
+        </div>
+        <div class="feature">
+            <img src="/Feature.jpg" alt="" width="30%" height="30%">
+            <h3>Professional Staff</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut sodales libero.</p>
+        </div>
+        <div class="feature">
+            <img src="/Feature.jpg" alt="" width="30%" height="30%">
+            <h3>Competitive Pricing</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut sodales libero.</p>
+        </div>
+    </section>
+    <div class="container">
+        <h4 class="section-title">✨Our Services</h4>
+        <h2>SERVICES WE PROVIDE</h2>
+        <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, eveniet accusantium necessitatibus cum ad vitae? Et quam dicta pariatur earum?</p>
+        <br>
+        <div class="services">
+            <div class="service">
+                <div class="service-icon">🏢</div>
+                <div class="service-title">Office Cleaning</div>
+                <div class="service-description">Ut quis euismod at vivamus nunc duis. Tempus leo id phasellus at tellus non orci consectetur. Viverra urna</div>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+            <div class="service">
+                <div class="service-icon">🏠</div>
+                <div class="service-title">House Cleaning</div>
+                <div class="service-description">Ut quis euismod at vivamus nunc duis. Tempus leo id phasellus at tellus non orci consectetur. Viverra urna</div>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+            <div class="service">
+                <div class="service-icon">🎀</div>
+                <div class="service-title">Carpet Cleaning</div>
+                <div class="service-description">Ut quis euismod at vivamus nunc duis. Tempus leo id phasellus at tellus non orci consectetur. Viverra urna</div>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+            <div class="service">
+                <div class="service-icon">🍳</div>
+                <div class="service-title">Kitchen Cleaning</div>
+                <div class="service-description">Ut quis euismod at vivamus nunc duis. Tempus leo id phasellus at tellus non orci consectetur. Viverra urna</div>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+        </div>
+    </div>
+    <section class="whole">
+    <div class="container1">
+        <div class="bg-shape"></div>
+        <section class="size">
+        <h2 class="W">✨Why Choose Us</h2>
+        <p class="X">Providing Friendly, Reliable Cleaning Services</p>
+        <p class="stats">Serving 4,000+ properties every month.</p>
+        <div class="list">
+            <div class="item">
+                <div class="item-title">➡️High-Quality Cleaning Services</div>
+                <div class="item-description">Sem dictum at viverra nibh odio egestas nunc augue sed. Eitam purus id mollis lorem scelerisque. Vel tempus at.</div>
+            </div>
+            <div class="item">
+                <div class="item-title">➡️Trained and Professional Staff</div>
+                <div class="item-description">Sem dictum at viverra nibh odio egestas nunc augue sed. Eitam purus id mollis lorem scelerisque. Vel tempus at.</div>
+            </div>
+            <div class="item">
+                <div class="item-title">➡️Exceptional Customer Service</div>
+                <div class="item-description">Sem dictum at viverra nibh odio egestas nunc augue sed. Eitam purus id mollis lorem scelerisque. Vel tempus at.</div>
+            </div>
+        </section>
+        </div>
+    </div>
+</section>
+<br>
+<div class="heading">
+    <h4>✨PRICING TABLE</h4>
+    <br>
+    <br>
+       <h2>PRICING PLANS FOR EVERY BUDGET</h2>
+    <p>Faucibus commodo & senean et sit quisque ipsum. Consequat eu id ut dolor felis quis. Sagittis a sapien pulvinar etiam.</p>
+</div>
+
+<div class="pricing-container">
+    
+
+    <div class="pricing-card">
+        <div class="pricing-title">BASIC CLEANING</div>
+        <div class="pricing-price"><span class="big">$350</span> /<span class="small">service</span></div>
+        <div>
+        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis cum illo debitis rem eaque modi placeat laborum accusantium ullam? Totam quasi deleniti in quaerat.</p>
+    </div>
+    <br>
+        <div class="pricing-features">
+            <div class="pricing-feature">➡️60 Minutes Consultation</div>
+            <div class="pricing-feature">➡️2 Bedroom Cleaning</div>
+            <div class="pricing-feature">➡️3 Bathroom Cleaning</div>
+            <div class="pricing-feature">➡️Living Room Cleaning</div>
+            <div class="pricing-feature">➡️7 Days Guarantee</div>
+        </div>
+        <button class="pricing-button">Get Started</button>
+    </div>
+    <div class="pricing-card1">
+        <div class="pricing-title">PRO CLEANING</div>
+        <div class="pricing-price"><span class="big">$650</span> /<span class="small">service</span></div>
+        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis cum illo debitis rem eaque modi placeat laborum accusantium ullam? Totam quasi deleniti in quaerat.</p>
+        <br>
+        <div class="pricing-features">
+            <div class="pricing-feature">➡️90 Minutes Consultation</div>
+            <div class="pricing-feature">➡️3 Bedroom Cleaning</div>
+            <div class="pricing-feature">➡️4 Bathroom Cleaning</div>
+            <div class="pricing-feature">➡️Living Room Cleaning</div>
+            <div class="pricing-feature">➡️7 Days Guarantee</div>
+        </div>
+        <button class="pricing-button1">Get Started</button>
+    </div>
+    <div class="pricing-card">
+        <div class="pricing-title">DELUXE CLEANING</div>
+        <div class="pricing-price"><span class="big">$950</span> /<span class="small">service</span></div>
+        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis cum illo debitis rem eaque modi placeat laborum accusantium ullam? Totam quasi deleniti in quaerat.</p>
+        <br>
+        <div class="pricing-features">
+            <div class="pricing-feature">➡️120 Minutes Consultation</div>
+            <div class="pricing-feature">➡️4 Bedroom Cleaning</div>
+            <div class="pricing-feature">➡️5 Bathroom Cleaning</div>
+            <div class="pricing-feature">➡️Living Room Cleaning</div>
+            <div class="pricing-feature">➡️7 Days Guarantee</div>
+        </div>
+        <button class="pricing-button">Get Started</button>
+    </div>
+</div>
+<div class="Heads">
+    <br>
+    <br>
+    <h5>✨OUR TEAM</h5>
+    <br>
+    <h2>Meet Our Cleaning Team</h2>
+</div>
+<div class="team-section">
+  
+    <div class="team-member">
+        <img src="https://media.tenor.com/Ug8-UyUSpyUAAAAi/cleaner-cleaning.gif" alt="" width="100px">
+        <!-- <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div> -->
+      <div class="member-info">
+        <h3>James Wong</h3>
+        <p>Cleaning Supervisor</p>
+      </div>
+      <a href="#" class="follow-button">➕Follow on Twitter</a> 
+    </div>
+    <div class="team-member">
+        <img src="https://64.media.tumblr.com/1098431a98ec61eb184789be833f9bfe/3d59c8de8d59b063-91/s1280x1920/879f263d3acfb7e4f67dea10a419957a7445487f.gifv" alt="" width="130px">
+      <div class="member-info">
+        <h3>Sarah Johnson</h3>
+        <p>Operations Manager</p>
+      </div>
+       <a href="#" class="follow-button">➕Follow on Twitter</a> 
+    </div>
+    <div class="team-member">
+        <img src="https://media.tenor.com/Bxt4gz5Vzg0AAAAC/alexby11-cleaning.gif" alt="" width="100px">
+      <div class="member-info">
+        <h4></h4>
+        <h3>David Nguyen</h3>
+        <p>Cleaning Technician</p>
+      </div>
+       <a href="#" class="follow-button">➕Follow on Twitter</a> 
+    </div>
+    <div class="team-member">
+        <img src="https://i.giphy.com/izzQjCpvaYI7gdXD7F.webp" alt="" width="150px">
+      <div class="member-info">
+        <h3>Samantha Lee</h3>
+        <p>Marketing Coordinator</p>
+      </div>
+       <a href="#" class="follow-button">➕Follow on Twitter</a> 
+    </div>
+  </div>
+  <section class="testimonial">
+    <div class="testimonial-content">
+        <h4>✨TESTIMONIAL</h4>
+        <br>
+        <br>
+      <h2>Hear What Our Clients Say</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, eveniet accusantium necessitatibus cum ad vitae? Et quam dicta pariatur earum?</p>
+      <br>
+      <div class="testimonial-cards">
+        <div class="testimonial-card">
+          <div class="stars">
+            <span class="star">&#11088;</span>
+            <span class="star">&#11088;</span>
+            <span class="star">&#11088;</span>
+            <span class="star">&#11088;</span>
+            <span class="star">&#11088;</span>
+          </div>
+          <p>Purus ipsum facilisis cursus nunc egetsa vel praesent auctor dolor. Et proin dolor rhoncus sit.</p>
+          <div class="client-info">
+            <div class="avatar">
+                <img src="https://thumbs.dreamstime.com/b/cute-man-face-cartoon-cute-man-face-cartoon-vector-illustration-graphic-design-135024353.jpg" alt="" width="50px">
+            </div>
+            <div class="client-details">
+              <p>James Smith</p>
+              <p>Office Manager</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">
+            <span class="star">&#11088;</span>
+            <span class="star">&#11088;</span>
+            <span class="star">&#11088;</span>
+            <span class="star">&#11088;</span>
+            <span class="star">&#11088;</span>
+          </div>
+          <p>Purus ipsum facilisis cursus nunc egetsa vel praesent auctor dolor. Et proin dolor rhoncus sit.</p>
+          <div class="client-info">
+            <div class="avatar">
+                <img src="https://cdn5.vectorstock.com/i/1000x1000/54/74/cute-woman-face-cartoon-vector-23305474.jpg" alt="" width="50px">
+            </div>
+            <div class="client-details">
+              <p>Rachel Lee</p>
+              <p>Office Manager</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">
+            <span class="star">&#11088;</span>
+            <span class="star">&#11088;</span>
+            <span class="star">&#11088;</span>
+            <span class="star">&#11088;</span>
+            <span class="star">&#11088;</span>
+          </div>
+          <p>Purus ipsum facilisis cursus nunc egetsa vel praesent auctor dolor. Et proin dolor rhoncus sit.</p>
+          <div class="client-info">
+            <div class="avatar">
+                <img src="https://www.shutterstock.com/image-vector/man-character-face-avatar-glasses-260nw-542759665.jpg" alt="" width="50px">
+            </div>
+            <div class="client-details">
+              <p>Michael Chen</p>
+              <p>Office Manager</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="trust-info">
+        <p>Trusted by 50k+ customers</p>
+        <div class="rating">
+          <span class="star">&#11088;</span>
+          <span class="star">&#11088;</span>
+          <span class="star">&#11088;</span>
+          <span class="star">&#11088;</span>
+          <span class="star">&#11088;</span>
+          <br>
+          <span class="rating-value">4.4/5 - 3,841 Reviews</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <h3>BERESIN</h3>
+        <p>Leo elementum iaculis quam massa vitae odio sed. Morbi tincidunt senectus.</p>
+        <br>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3SPZ7fDObtVmmyB0_QL44wTgIWTH5GIJmE3KvCMReIQ&s" alt="" width="30px" height="30px">
+      <img src="https://i.pinimg.com/736x/23/59/fb/2359fb191ccc0e93554ee0e9d6077dfb.jpg" alt="" width="30px" height="30px">
+      <img src="https://i.pinimg.com/originals/41/89/0b/41890b52d491f44078f86ea7b5268ba5.png" alt="" width="30px">
+      </div>
+      
+      <div class="footer-links">
+        <ul class="navigation">
+            <h2>NAVIGATION</h2>
+            <br>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Services</a></li>
+          <li><a href="#">Our Team</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <ul class="navigation">
+            <h2>SERVICES</h2>
+            <br>
+            <li><a href="#">Kitchen Cleaning</a></li>
+            <li><a href="#">Office Cleaning</a></li>
+            <li><a href="#">Carpet Cleaning</a></li>
+            <li><a href="#">House Cleaning</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <ul class="navigation">
+            <h2>CONTACT</h2>
+            <br>
+            <li><a href="#">Our Support and Sales team is available 24/7 to answer your queries</a></li>
+            <li><a href="#">📍 123 Main St, Suite 500, New York, NY 10001</a></li>
+            <li><a href="#">📞 +1 (333) 000-0000</a></li>
+        </ul>
+      </div>
+      <div class="line"></div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>COPYRIGHT © 2023 BERESIN | DESIGN BY TOKOTEMA</p>
+      <div class="footer-links">
+        <a href="#">TERM OF USE</a>
+        <a href="#">PRIVACY POLICY</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
